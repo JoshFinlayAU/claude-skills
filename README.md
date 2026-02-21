@@ -1,17 +1,43 @@
-# Claude Skills: VoIP & IP Telephony Reference Library
+# Claude Skills: Telecommunications & Network Engineering Reference Library
 
-A collection of Claude AI skills providing comprehensive engineering reference guides for VoIP infrastructure, IP phone provisioning, and PBX platform configuration.
+A collection of Claude AI skills providing comprehensive engineering reference guides for carrier network infrastructure, VoIP systems, IP phone provisioning, and PBX platform configuration.
 
 ## Overview
 
-This repository contains two specialized skill modules designed to assist telecommunications engineers and system administrators with voice infrastructure implementation, configuration, and troubleshooting:
+This repository contains specialized skill modules designed to assist telecommunications engineers, network engineers, and system administrators with network infrastructure design, voice systems implementation, and troubleshooting:
 
 | Skill | Description |
 |-------|-------------|
+| **Carrier Network Engineering** | Carrier-grade network config generation, troubleshooting, and design for MikroTik, Cisco, Juniper, Nokia, and Arista |
 | **IP Phone Provisioning** | End-to-end configuration and deployment guides for major IP phone vendors |
 | **VoIP & PBX Engineering** | Comprehensive VoIP architecture, protocol, and platform reference |
 
 ## Skills
+
+### Carrier Network Engineering
+
+Expert-level network engineering assistance for carrier and enterprise networks, covering all major vendors:
+
+- **MikroTik** — RouterOS configuration
+- **Cisco** — IOS, IOS-XE, NX-OS, IOS-XR
+- **Juniper** — JunOS
+- **Nokia** — SR OS
+- **Arista** — EOS
+
+Capabilities include:
+
+- Configuration generation with complete, paste-ready config blocks
+- BGP/OSPF/IS-IS/MPLS routing design and implementation
+- VLAN/VXLAN/VPLS/L2VPN/L3VPN service provisioning
+- PPPoE/IPoE subscriber management and RADIUS integration
+- GPON/FTTH deployment and fixed wireless networks
+- VRRP/HSRP/GLBP high-availability design
+- QoS policy design for voice/video/data prioritisation
+- Firewall/ACL rules and control plane protection
+- SNMP/NetFlow/sFlow monitoring setup
+- Network migrations between vendors
+- Carrier peering and traffic engineering
+- CGNAT deployment and IPv6 rollout
 
 ### IP Phone Provisioning
 
@@ -73,6 +99,16 @@ Dedicated guidance for Australian deployments:
 
 ```
 claude-skills/
+├── carrier-network-engineering/
+│   ├── SKILL.md                    # Skill definition
+│   └── references/
+│       ├── mikrotik.md             # MikroTik RouterOS reference
+│       ├── cisco.md                # Cisco IOS/IOS-XE/NX-OS/IOS-XR reference
+│       ├── juniper.md              # Juniper JunOS reference
+│       ├── nokia.md                # Nokia SR OS reference
+│       ├── arista.md               # Arista EOS reference
+│       └── protocols.md            # Cross-vendor protocol best practices
+│
 ├── ip-phone-provisioning/
 │   ├── SKILL.md                    # Skill definition
 │   └── references/
@@ -97,6 +133,14 @@ claude-skills/
 
 These skills are designed to integrate with Claude AI. When activated, Claude can assist with:
 
+**Carrier Network Engineering triggers:**
+- "Configure eBGP peering with our upstream provider"
+- "Set up MPLS L3VPN on Juniper"
+- "Troubleshoot OSPF adjacency issues on Cisco"
+- "Design a VRRP failover for MikroTik"
+- "Migrate this Cisco config to Arista"
+- "Set up PPPoE subscriber termination"
+
 **IP Phone Provisioning triggers:**
 - "How do I configure a Yealink phone?"
 - "Set up zero-touch provisioning"
@@ -114,17 +158,19 @@ These skills are designed to integrate with Claude AI. When activated, Claude ca
 
 | Metric | Value |
 |--------|-------|
-| Total documentation | ~6,000 lines |
-| Reference documents | 11 |
-| Vendor guides | 4 |
+| Total documentation | ~6,000+ lines |
+| Reference documents | 17 |
+| Network vendor guides | 5 |
+| Phone vendor guides | 4 |
 | PBX platform guides | 6 |
 
 ## Target Audience
 
+- Network engineers and architects
 - VoIP engineers and system administrators
-- Telecommunications professionals
+- Telecommunications / ISP / carrier professionals
 - IT teams deploying IP phone systems
-- MSPs managing voice infrastructure
+- MSPs managing voice and network infrastructure
 
 ## License
 
